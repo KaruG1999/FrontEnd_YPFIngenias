@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  color: aliceblue;
+
+  /* estilo para fondos */
+  background-image: url(../img/5771065_2987139.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* asterisco: sobre todas las etiquetas 
+existentes se aplica lo siguiente (incluye body)*/
+/* resetea todo el css margin y padding 0px */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: rgb(168, 35, 150);
+  font-size: 10px;
+  font-weight: bold; /*texto negrita */
+}
+h1 {
+  font-style: italic;
+  color: black;
+}
+
+/* estilo para listas */
+
+ul {
+  list-style-type: none; /* saca los items de lista */
+  color: crimson;
+
+  /* variables CSS de tipografias de google fonts */
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* modifica parrafos de distintas clases*/
+.centro {
+  text-align: center; /* alinea texto en centro */
+  color: blue;
+}
+
+.tachado {
+  text-decoration: line-through; /* tacha texto */
+  color: red;
+}
+
+.interlineado {
+  line-height: 2; /* aplica distancia entre texto */
+  color: darkgreen;
+}
+
+/* modifico link */
+a {
+  /* saca deco preterminada y coloco color y borde al link */
+  text-decoration: none;
+  color: brown;
+  border: 2px solid;
+}
+
+div {
+  /* ej tag en bloque */
+
+  border: 2px solid darkslateblue;
+  width: 100px;
+  height: 100px;
+  /* transformo tag en bloque en tag en linea */
+  display: inline;
+}
+span {
+  /* ej tag en linea */
+  border: 2px solid darkred;
+  width: 100px;
+  height: 100px;
+  /* transformo tag en linea en tag en bloque */
+  display: block;
+}

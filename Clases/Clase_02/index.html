@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h1> Clase 02 HTML </h1>
+
+    <!-- lista ordenada -->
+    <ol>
+        <li>Levantarse</li>
+        <li>Tender cama</li>
+        <li>Higienizarse</li>
+        <li>Hacer ejercicio</li>
+    </ol>
+    <!-- lista desordenada -->
+    <ul>
+        <li>gabinete</li>
+        <li>monitor</li>
+        <li>teclado</li>
+        <li>mouse</li>
+    </ul>
+
+    <!-- Tabla-->
+    <table id="tablas">
+        <!-- Fila -->
+        <tr>
+            <!-- Columna -->
+            <td>Fila 1 Columna 1</td>
+            <td>Fila 1 Columna 2</td>
+            <td>Fila 1 Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2 Columna 1</td>
+            <td>Fila 2 Columna 2</td>
+            <td>Fila 2 Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 3 Columna 1</td>
+            <td>Fila 3 Columna 2</td>
+            <td>Fila 3 Columna 3</td>
+        </tr>
+    </table>
+
+    <!-- Formularios (inputs) -->
+    <form id="formulario">
+        <!-- Agrupar por secciones fieldset y legend -->
+        <fieldset>
+            <legend> Usuario: </legend>
+        
+        <!-- Input con label -->
+        <label>
+            Nacionalidad: 
+            <input type="text" name="nacionalidad" id="">
+        </label> <br/>
+        <!-- Formularios texto -->
+        <input type="text" name="nombre completo" id="" placeholder="Nombre y apellido"/><br/>
+        <!-- Formularios email -->
+        <input type="email" name="email" id="" placeholder="Email"/><br/>
+        <!-- Formularios contraseña -->
+        <input type="password" name="contraseña" id="" placeholder="Contraseña"/><br/>
+        <!-- Formularios numero -->
+        <input type="number" name="edad" id="" placeholder="Edad"/><br/>
+
+    </fieldset>
+
+        <!-- Opcion para limpiar formulario -->
+        <input type="reset" value="Limpiar">
+        <!-- Recomendado boton Enviar -->
+        <button type="submit">Enviar</button>
+        <!-- Se puede seleccionar solo una opcion -->
+        <div>
+            <input type="radio" name="pais" id="" value="AR"><label> Argentina</label>
+            <input type="radio" name="pais" id="" value="UR"><label> Uruguay </label>
+        </div>
+        <!-- Se puede seleccionar varias opciones del grupo -->
+        <div>
+            <input type="checkbox" name="opcion 1" id=""><label>Acepto terminos</label>
+            <input type="checkbox" name="opcion 2" id=""><label>Acepto terminos y condiciones</label>
+        </div>
+        
+    </form>
+
+    <!-- Enlaces -->
+    <!-- Enlace a link -->
+    <a href="https://campus.educalabs.org/login/index.php" target="_blank">Nombre del enlace</a>
+    <!-- Enlace a HTML dentro de la misma carpeta -->
+    <a href="./index.html">Enlace a otro HTML</a>
+    <!-- Redireccionar a distinta seccion de la pagina -->
+    <ul>
+        <!-- en href escribo el id de cada seccion declarada -->
+        <li><a href="#formulario">Formularios</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+    </ul>
+
+
+    
+
+
+
+</body>
+</html>

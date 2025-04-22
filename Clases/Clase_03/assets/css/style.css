@@ -1,0 +1,52 @@
+/* con la etiqueta cambia las prop de todos los elementos en html 
+que tengan la misma etiqueta. Ej: body, p, h5 */
+
+body {
+/* cambio fondo y color de letra del body */
+background-color: black;
+color: white;
+
+}
+
+p {
+/* cambio tipografia de parrafos */
+font-family: fantasy;
+
+}
+
+h5 {
+/* cambio tamaño y color a textos h5 */
+font-size: large;
+color: red;
+
+}
+
+/* si quiero cambia un grupo de elementos dentro de una seccion
+por ejemplo un div (no todos) 
+se usa .NombreSeccion {}  */
+
+.card-img {
+
+    background-color: cadetblue;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+/* ahora si quiero modificar una seccion con id uso:
+#NombreId {}    */
+
+#inicio {
+
+background-color: chocolate;
+color: chartreuse;
+
+}
+/* si quiero modificar algo particular dentro del id es: 
+#nombreId nombreEtiq {}  */
+#inicio p {
+
+    font-size: x-large;
+
+}

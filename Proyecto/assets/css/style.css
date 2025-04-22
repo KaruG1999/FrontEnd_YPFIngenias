@@ -1,0 +1,119 @@
+/* Pagina entera */
+body {
+  background-color: #f8f5e6; /* Color de fondo, beige musgo */
+}
+h2 {
+  color: #4f3e2a;
+}
+#logo h1 {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen con el texto */
+  gap: 1px; /* Espacio entre la imagen y el texto */
+  color: #4a3722;
+}
+#logo img {
+  order: 0; /* Asegura que la imagen esté a la izquierda */
+}
+
+header {
+  /* barra de navegacion pagina (logo y list de paginas) */
+  display: flex; /* alinea elementos de izq a derecha */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  /* lista de paginas */
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+a {
+  /* color de links */
+  color: #4f3e2a;
+}
+/* texto bienvenida con slogan (? */
+.intro {
+  display: flex;
+  text-align: right;
+  background-color: #e0f0d7;
+  border-color: #c8d5c0;
+  border-radius: 5px;
+}
+.intro button {
+  background-color: #e99688;
+  border-radius: 3px;
+  border-color: #f7afa3;
+}
+.intro p {
+  color: #6f935f;
+}
+.intro h1 {
+  color: #4f3e2a;
+  text-align: start;
+}
+
+/* seccion info: qué podes hacer en la pagina */
+#info h2 {
+  text-align: center;
+}
+
+#info ol {
+  display: flex; /* ordeno lista de izq a derecha en 3 cards */
+  justify-content: space-between; /* inserta espacio entre elementos  */
+  list-style: none; /* elimina numero */
+  padding: 2px; /* espaciado interno */
+}
+.card {
+  background-color: #a3896b;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #fbefb1; /* no aplica el borde ???? */
+  width: 180px; /* ancho de tarjeta */
+}
+.card img {
+  align-items: center;
+  border-radius: 10px;
+}
+.card h3 {
+  color: #32432b;
+}
+.card p {
+  color: #3f322a;
+}
+
+/* seccion de info de comunidad */
+
+#comunidad {
+  text-align: center;
+  width: 600px;
+  align-items: center;
+  display: flex;
+}
+#comunidad p {
+  text-align: right;
+}
+
+/* seccion de testimonios de usuarios */
+
+#testimonios ol {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+.review {
+  width: 300px;
+}
+
+/* pie de pagina */
+footer {
+  background-color: #a3896b;
+}
+footer p {
+  text-align: center;
+  color: #32432b;
+}

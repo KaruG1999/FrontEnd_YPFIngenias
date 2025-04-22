@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Información Personal:</legend>
+        <form>
+
+            <label>
+                Producto 
+                <div>
+                    <input type="radio" name="producto" id="producto" value="pantalon" > <label>Pantalones</label>
+                    <input type="radio" name="producto" id="producto" value="remera"> <label for> Remeras </label>
+                    <input type="radio" name="producto" id="producto" value="buzo"> <label> Buzos </label>
+                </div>
+            </label> 
+            <br>
+            <label>
+                Nombre: <br>
+                <input type="text" name="nombre" id="" placeholder="Nombre">
+            </label>
+            <br> <br>
+            <label>
+                Apellido: <br>
+                <input type="text" name="apellido" id="" placeholder="Apellido">
+            </label>
+            <br> <br>
+            <label> 
+                Talle: 
+                <!-- Menu desplegable o Lista combinada  -->
+                <select name="talle" id="">
+                    <option value="extralarge">Extra large</option>
+                    <option value="large">Large</option>
+                    <option value="medium">Medium</option>
+                    <option value="small">Small</option>
+                </select>
+            </label>
+            <br> <br>
+            <input type="button" value="Enviar">
+
+        </form>
+
+    </fieldset>
+</body>
+</html>

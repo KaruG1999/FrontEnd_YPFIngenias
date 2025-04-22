@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: aliceblue;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    margin: 20px 30px 40px 50px;
+    padding: 10px;
+
+    background-color: brown;
+
+    width: 200px ; /* ancho por default */
+    height: 100% ; /* altura 100% del body */
+    
+}
+

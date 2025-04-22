@@ -1,0 +1,304 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  
+  color: black;
+
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.tarjeta {
+  background: rgba(149, 138, 138, 0.85); /* fondo semi-transparente */
+  border: 2px solid #534646;
+  border-radius: 20px;
+  width: 450px;
+  text-align: center; /* alineo texto de tarjeta en centro */
+  padding: 15px;
+  margin: 0 auto; /* alineo en el centro toda la tarjeta completa*/
+}
+.tarjeta p{
+  color:rgb(160, 183, 128);
+  text-shadow: 0 0 2px  rgb(54, 45, 60); /* sombra muy leve, apenas visible */
+}
+
+p {
+  margin-bottom: 1em; /* aplico espaciado de titulos y parrafos */
+}
+h2 {
+  margin-bottom: 1em;
+}
+
+/* caracteristicas de la foto  en presentacion*/
+#presentacion img {
+  border: 1px solid rgb(128, 99, 149);
+  border-radius: 75px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombrea recuadro */
+}
+
+#presentacion {
+  background: rgb(93, 90, 90,0.8);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 3em;  /* espacio entre la presentacion y el resto */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombrea recuadro */
+
+}
+#presentacion h2 {
+  background-color: rgb(128, 99, 149, 0.5);
+  width: 250px;
+  padding:1px ;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid rgb(128, 99, 149);
+  padding: 5px;
+  text-shadow: 0 0 2px  rgba(212, 181, 233, 0.7); /* sombra muy leve, apenas visible */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombrea recuadro */
+  margin-bottom: 15px;
+}
+
+#presentacion p{
+  border: 1px solid rgb(128, 99, 149);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+  text-shadow: 0 0 2px  rgb(54, 45, 60); /* sombra muy leve, apenas visible */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombrea recuadro */
+  margin-bottom: 25px;
+}
+
+#presentacion .extra {
+  display: inline-flex;
+  align-items: center;        /* centra verticalmente */
+  justify-content: center;    /* centra horizontalmente */
+  gap: 5px;                  /* espacio entre texto e imagen */
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 20px;
+
+  /* Recuadro sutil */
+  
+  border: 1px solid rgba(128, 99, 149, 0.5);
+  border-radius: 10px;
+  padding: 10px ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
+  text-shadow: 0 0 2px  rgb(54, 45, 60); /* sombra muy leve, apenas visible */
+
+}
+
+#presentacion .extra h4 {
+  margin: 0;
+  font-size: 1em;
+
+  /* Estilo similar a .tarjeta p */
+  color: rgb(160, 183, 128);
+  text-shadow: 0 0 5px rgb(54, 45, 60);
+}
+
+#presentacion .extra img {
+  all: unset;                /* elimina estilos heredados */
+  width: 30px;
+  transform: translateY(-5px); /* lo sube un poquito */
+  animation: float 3s ease-in-out infinite;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  
+}
+.chip {
+  background-color: #a0b582;
+  width: 100px;
+  border-radius: 20px;
+  padding: 8px;
+  text-shadow: 0 0 0.5px  rgb(54, 45, 60); /* sombra muy leve, apenas visible */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombrea recuadro */
+}
+
+a {
+  text-decoration: none;
+  color: #211e1e;
+  padding: 10px;
+}
+
+/* caracteristicas de la tipografia de google font */
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ol{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap; /* acomoda el texto si no entra en la misma linea */
+  padding: 0;   /* elimina espacio preterminado */
+  gap:30px;  /* espacio entre los items */
+}
+ol img{
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 5px;  /* agrego espacio debajo de la imagen */
+}
+ol li{
+  display: flex;  /* alineo contenido de lista */
+  flex-direction: column; /* organiza elementos de arriba hacia abajo */
+  align-items: center; /* centra los items dentro de lista */
+  padding: 10px; /* espacio entre el borde y el contenido de la tarjeta */
+  width: 150px; /* ancho de cada card */
+  border: 1px solid #ccc; /* agrego borde */
+  border-radius: 12px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* agrego sombra suave */
+  text-align: center;
+  flex: 1 1 150px; /* la tarjeta se ajusta de forma dinamica */
+  gap: 3px;
+  margin-bottom: 15px;
+}  
+#proyecto img{
+  border-radius: 20px;
+
+}
+#proyecto h2{
+  text-shadow: 0 0 0.5px  rgb(54, 45, 60);
+  margin-bottom: 15px;
+
+}
+#proyecto h3{
+  margin-bottom: 15px;
+
+}
+
+#proyecto a{
+  margin-bottom: 10px;
+  text-shadow: 0 0 1px  rgb(143, 109, 166);
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+#proyecto p{
+  display: inline-block;
+  padding: 0px;
+  text-shadow: 0 0 2px  rgb(54, 45, 60); /* sombra muy leve, apenas visible */
+}
+
+#curriculum {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.02); /* leve fondo para diferenciar */
+  border-radius: 12px;
+}
+
+#curriculum .tit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  justify-content: center; /* centra imagen y texto juntos */
+}
+
+#curriculum .tit img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+#curriculum .tit h2 {
+  font-size: 1.3rem;
+  color: #3b3b3b;
+  margin: 0;
+  text-shadow: 0 0 0.5px rgb(54, 45, 60);
+}
+
+/* Parrafos generales */
+#curriculum p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: rgb(160, 183, 128);
+  text-shadow: 0 0 3px rgb(54, 45, 60);
+  text-align: center;
+}
+
+/* Soft Skills como chips */
+#curriculum .soft {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-left: 0;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+#curriculum .soft li {
+  background-color: rgba(160, 183, 128, 0.3);
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  color: #3b3b3b;
+  text-shadow: 0 0 1px rgb(54, 45, 60,0.8); 
+  border: 1px solid rgba(160, 183, 128, 0.7);
+}
+
+/* Hard Skills */
+#curriculum .hard {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+#curriculum .hard li {
+  margin-bottom: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#curriculum .hard strong {
+  color: #5c4d6d;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  text-shadow: 0 0 1px rgb(38, 30, 44,0.5);
+}
+
+#curriculum .hard p {
+  font-size: 0.95rem;
+  color: rgb(85, 85, 85);
+  margin: 0;
+  text-shadow: 0 0 1px rgb(31, 25, 36,0.5);
+}
+
+/* Link final */
+#curriculum a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: #2a2a2a;
+  text-shadow: 0 0 1px rgb(143, 109, 166);
+}
+
+
+
+
+
+/* paleta de colores 
+    Verde rana suave: #B9D88D
+    Lavanda pastel (hongos): #D5A9D2
+    Púrpura sombrero de bruja: #8C6BA4
+    Amarillo estrella cálido: #FBE8AC
+  */
